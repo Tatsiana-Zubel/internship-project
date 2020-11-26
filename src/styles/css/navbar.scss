@@ -1,0 +1,190 @@
+@import "global";
+
+ul.navbar-nav {
+  li {
+    .nav-link {
+      font-size: 14px;
+      align-self: center;
+    }
+
+    .nav-btn {
+      font-size: 14px;
+      border-radius: 50px;
+      background: $no_color;
+      color: $base_color;
+      border: 1px solid $base_color;
+      padding: 10px 30px;
+      display: inline-block;
+      text-decoration: none;
+
+      &:hover {
+        background: $base_color;
+
+        span,
+        .link-icon {
+          color: $white_color;
+        }
+      }
+    }
+  }
+}
+
+.nav-item {
+  display: flex;
+
+  &:hover {
+    :after {
+      content: "";
+      display: block;
+      width: 20px;
+      border-top: 1px solid $base_color;
+      margin: 0 auto;
+      text-align: center;
+      top: 5px;
+      position: relative;
+    }
+  }
+}
+
+.active-page {
+  &:after {
+    content: "";
+    display: block;
+    width: 20px;
+    border-top: 1px solid $base_color;
+    margin: 0 auto;
+    text-align: center;
+    top: 5px;
+    position: relative;
+  }
+}
+
+
+div.burger {
+  margin: 0 0 0 auto;
+
+  button {
+    &.burger-btn {
+      height: 74px;
+      padding: 0 26px;
+      border: none;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      &.active-burger {
+        background-color: $base_color;
+
+        span {
+          color: $white_color;
+        }
+      }
+
+      &.notactive-burger {
+        background-color: transparent;
+        border-left: 1px solid #ddd;
+      }
+
+      span {
+        .burger-icon {
+          padding: 3px;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1081px) {
+  li {
+    .nav-btn {
+      .link-text {
+        display: block;
+      }
+
+      .link-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1110px) {
+  li {
+    .nav-btn {
+      .link-text {
+        display: none;
+      }
+
+      .link-icon {
+        display: block;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  li {
+    .nav-link {
+      margin-right: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  div {
+    .navbar-collapse {
+      background: $white_color;
+      position: absolute;
+      top: 100%;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      width: 100%;
+      left: 0;
+      padding-bottom: 30px;
+
+      .navbar-nav {
+        padding-top: 10px;
+        flex-direction: column-reverse;
+
+        .nav-item {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          margin-left: 10%;
+          margin-right: 10%;
+
+          &:hover {
+            background-color: $btn_hover_grey_bg;
+          }
+
+          .nav-link {
+            margin: 0 auto;
+
+          }
+        }
+
+        .nav-btn {
+          width: 50%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          .link-text {
+            display: block;
+          }
+
+          .link-icon {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .burger {
+      position: absolute;
+      right: 8.333333%;
+      top: 0;
+    }
+  }
+}

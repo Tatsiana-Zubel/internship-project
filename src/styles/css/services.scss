@@ -1,0 +1,116 @@
+@import "global";
+
+.container-fluid {
+  .services-description {
+    background: $grey_bg;
+    padding-top: 115px;
+    padding-bottom: 40px;
+
+    h1 {
+      &::before {
+        content: "";
+        display: block;
+        width: 35px;
+        border-top: 2px solid $base_color;
+        margin: 0 auto 2rem;
+        text-align: center;
+      }
+    }
+
+    div {
+      .i-container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .icon-round {
+          border-radius: 60px;
+          border: 1.5px solid $base_color;
+          display: inline-block;
+          height: 60px;
+          width: 60px;
+          background: rgba(255, 255, 255, 0.5);
+          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+
+  div.services-categories {
+    background: $white_color;
+    padding-bottom: 60px;
+
+    div {
+      &.btn-group {
+        padding-top: 40px;
+        width: 100%;
+        margin-bottom: 80px;
+
+        .active-btn {
+          background: $base_color;
+          font-size: $font_small;
+          color: $white_color;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+
+          &:hover {
+            background: $red_btn_hover_bg;
+            font-size: $font_small;
+            color: $white_color;
+          }
+        }
+
+        .not-active-btn {
+          background: $white_color;
+          font-size: $font_small;
+          color: $dark_color;
+          border-bottom: 1px solid $btn_border_bottom;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+
+          &:hover {
+            background: $btn_hover_grey_bg;
+            color: $dark_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .container-fluid {
+    div.services-description {
+      margin-bottom: 30px;
+
+
+      div {
+        .top-p {
+          margin-right: 10%;
+          margin-left: 10%;
+        }
+      }
+
+      div {
+        .i-container {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .container-fluid {
+    div.services-description {
+      margin-top: 180px;
+    }
+  }
+}
+

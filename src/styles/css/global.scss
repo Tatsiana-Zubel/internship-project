@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet');
+
+$base_color: #d83135;
+$base_color_90: rgba($base_color, 0.9);
+$white_color: #ffffff;
+$dark_color: #7d7d7d;
+$dark_blue: #2b313c;
+$no_color: transparent;
+
+$grey_bg: #f8f9fa;
+$red_btn_hover_bg: #984458;
+$btn_hover_grey_bg: #ddd;
+$btn_border_bottom: #dee2e6;
+
+$font_small: 16px;
+$font_medium: 20px;
+$font_big: 32px;
+$font_large: 40px;
+$font_red: 20px;
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+html, body {
+  font: {
+    family: "Open Sans", "AvertaSd", sans-serif;
+  }
+
+  h1 {
+    font-size: $font_large;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: $font_big;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: $font_medium;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #D83135;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: bolder;
+    color: $base_color;
+  }
+
+  p {
+    font-size: $font_small;
+  }
+
+  //On-photo header
+
+  .title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  //Buttons
+
+  .btn-danger {
+    background-color: #d83135;
+    color: white;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 1px solid #d83135;
+    margin: 0 auto
+  }
+
+  //Icons
+
+  .icon-round {
+    border-radius: 60px;
+    border: 1.5px solid #b9556d;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+
+
+  //Tooltip
+
+  .tooltip > .tooltip-inner {
+    background-color: $white_color;
+    color: $dark_color;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+  }
+
+  .tooltip > .tooltip-arrow::before {
+    border-bottom-color: $dark_color;
+  }
+}
+
+//Responsive

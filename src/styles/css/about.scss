@@ -1,0 +1,45 @@
+@import "global";
+
+.about {
+  .jumbotron {
+    background-image: url("https://i.ibb.co/5YPh7k1/about.jpg");
+    background-size: cover;
+  }
+
+  .text-link {
+    color: #D10016;
+
+    &:hover {
+      color: #D10016;
+      font-weight: bold;
+    }
+  }
+
+  .partners {
+    background: $grey_bg;
+  }
+
+  .icon-round {
+    border-radius: 60px;
+    border: 1.5px solid #b9556d;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .team card-deck {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
+
+  .card-img {
+    width: 10rem;
+    height: 13rem;
+
+  }
+}
+
+

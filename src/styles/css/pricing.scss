@@ -1,0 +1,153 @@
+@import "global";
+
+.pricing-container {
+  margin: 0 auto;
+  padding-bottom: 70px;
+
+  .heading {
+    padding-top: 115px;
+    padding-bottom: 50px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 35px;
+      border-top: 2px solid $base_color;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+  }
+
+  div {
+    button {
+      &.active-btn {
+        background: $base_color;
+        font-size: $font_small;
+        color: $white_color;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        &:hover {
+          background: $red_btn_hover_bg;
+          color: $white_color;
+        }
+      }
+
+      &.not-active-btn {
+        background: $white-color;
+        font-size: $font_small;
+        color: $dark_color;
+        border-bottom: 1px solid $btn_border_bottom;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        &:hover {
+          background: #ddd;
+          color: $dark_color;
+          border-bottom: 1px solid #dee2e6;
+        }
+      }
+    }
+  }
+
+  div {
+    table {
+      thead, tbody {
+        tr {
+          &.service-type-heading {
+            background: #F5F5F5;
+          }
+
+          th, td {
+            min-width: 140px;
+
+            &.eea-res {
+              border-top: 3px solid #0097CF;
+            }
+
+            &.noneea-res {
+              border-top: 3px solid #A32362;
+            }
+
+            &.compl-intensive {
+              border-top: 3px solid #666666;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div {
+    .btn-get {
+      background-color: $base_color_90;
+      color: $white_color;
+      font-size: $font_small;
+      padding: 14px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 1px solid $base_color;
+      margin: 0 auto;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background: $base_color;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1140px) {
+  .pricing-container {
+    .heading {
+      margin-top: 85px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .pricing-container {
+    div {
+      &.fixed-top {
+        position: relative;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .pricing-container {
+    .heading {
+      margin-top: 150px;
+    }
+
+    div {
+      &.fixed-top {
+        top: 75px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-container {
+    div {
+      button {
+        &.active-btn, &.not-active-btn {
+          font-size: $font_small;
+          height: 55px;
+        }
+      }
+    }
+  }
+}

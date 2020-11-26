@@ -1,0 +1,12 @@
+@import "global";
+
+.main-page .top .jumbotron {
+  background-image: url("https://i.ibb.co/48rLrRY/main-page.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.solutions {
+  background: $grey_bg;
+}
