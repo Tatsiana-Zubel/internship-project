@@ -19,12 +19,17 @@ import Pricing from './components/Pricing.vue'
 import About from './components/About.vue'
 import Services from './components/Services.vue'
 import Support from './components/Support.vue'
+import LegalDocuments from "./components/LegalDocuments";
 
 import BusinessesIndividuals from './components/components/services/BusinessesIndividuals.vue'
 import Ecommerce from './components/components/services/Ecommerce.vue'
 import ReferralProgram from './components/components/services/ReferralProgram.vue'
 import ServiceProviders from './components/components/services/ServiceProviders.vue'
 
+import TermsAndConditions from "./components/components/legal-documents/TermsAndConditions.vue";
+import PrivacyPolicy from './components/components/legal-documents/PrivacyPolicy.vue'
+import CookiesPolicy from './components/components/legal-documents/CookiesPolicy.vue'
+import Recommendations from './components/components/legal-documents/Recommendations.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -40,6 +45,15 @@ const routes = [
       { path: 'providers', component: ServiceProviders, name: 'ServiceProviders' }
     ]
   },
+  {path: '/legal-documents', component: LegalDocuments},
+  { path: '/terms-and-conditions', component: TermsAndConditions, name: 'TermsAndConditions' },
+  { path: '/privacy-policy', component: PrivacyPolicy, name: 'PrivacyPolicy' },
+  { path: '/cookies-policy', component: CookiesPolicy, name: 'CookiesPolicy' },
+  { path: '/recommendations', component: Recommendations, name: 'Recommendations' },
+
+
+
+
 ]
 
 const router = new VueRouter({

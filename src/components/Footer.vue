@@ -47,14 +47,18 @@
                     <ul class="nav flex-column text-lg-left text-md-center text-sm-center">
                         <h5 class="text-uppercase mb-2 font-weight-bold">Legal</h5>
                         <li class="my-0">
-                            <a class="link" href="#">Terms & Conditions</a>
+                            <a class="link" href="/terms-and-conditions">Terms & Conditions</a>
                         </li>
                         <li>
-                            <a class="link" href="#">Privacy Policy</a>
+                            <a class="link" href="/privacy-policy">Privacy Policy</a>
                         </li>
                         <li class="my-0">
-                            <a class="link" href="#">Cookies Policy</a>
+                            <a class="link" href="/cookies-policy">Cookies Policy</a>
                         </li>
+                        <li class="my-0">
+                            <a class="link" href="/legal-documents">All documents</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
