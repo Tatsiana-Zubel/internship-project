@@ -28,7 +28,7 @@ export default {
                 {
                     id: 1,
                     name: 'providers title',
-                    data: '<h2 class="mb-5">Some Services</h2>',
+                    data: '<h2 class="mb-5">For Service Providers</h2>',
                     page: 'services/providers'
                 },
                 {
@@ -46,7 +46,7 @@ export default {
                 {
                     id: 4,
                     name: 'automated payments title',
-                    data: `<h3 class="mb-4">${this.lorem()}</h3>`,
+                    data: `<h3 class="mb-4">Some Services</h3>`,
                     page: 'services/providers'
                 },
                 {

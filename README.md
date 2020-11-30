@@ -1,4 +1,4 @@
-# website-2020
+# internship-project
 
 ## Project setup
 ```

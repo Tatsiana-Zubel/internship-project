@@ -107,14 +107,6 @@
 }
 
 
-@media only screen and (max-width: 1140px) {
-  .pricing-container {
-    .heading {
-      margin-top: 85px;
-    }
-  }
-}
-
 @media only screen and (min-width: 992px) {
   .pricing-container {
     div {
@@ -128,7 +120,7 @@
 @media only screen and (max-width: 992px) {
   .pricing-container {
     .heading {
-      margin-top: 150px;
+      padding-top: 150px;
     }
 
     div {

@@ -50,7 +50,7 @@ export default {
                 {
                     id: 1,
                     name: 'e-commerce title',
-                    data: '<h2 class="mb-5">Some Services</h2>',
+                    data: '<h2 class="mb-5">For services</h2>',
                     page: 'services/ecommerce'
                 },
                 {

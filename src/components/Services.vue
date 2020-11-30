@@ -10,31 +10,31 @@
                         <div class="icon-round p-3">
                             <i class="fas fa-user-shield" size="1x"></i>
                         </div>
-                        <div v-html="displayContent('one and two')"/>
+                        <div v-html="displayContent('accounts and transfers')"/>
                     </div>
                     <div class="i-container col-lg-4 col-md-6 col-sm-12">
                         <div class="icon-round p-3">
                             <i class="fas fa-euro-sign" size="1x"></i>
                         </div>
-                        <div v-html="displayContent('changes three')"/>
+                        <div v-html="displayContent('currency exchange')"/>
                     </div>
                     <div class="i-container col-lg-4 col-md-6 col-sm-12">
                         <div class="icon-round p-3">
                             <i class="fas fa-shopping-cart" size="1x"></i>
                         </div>
-                        <div v-html="displayContent('four five')"/>
+                        <div v-html="displayContent('e-commerce')"/>
                     </div>
                     <div class="i-container col-lg-4 col-md-6 col-sm-12">
                         <div class="icon-round p-3">
                             <i class="fas fa-users" size="1x"></i>
                         </div>
-                        <div v-html="displayContent('six seven')"/>
+                        <div v-html="displayContent('remittance')"/>
                     </div>
                     <div class="i-container col-lg-4 col-md-6 col-sm-12">
                         <div class="icon-round p-3">
                             <i class="fas fa-credit-card" size="1x"></i>
                         </div>
-                        <div v-html="displayContent('eight nine')"/>
+                        <div v-html="displayContent('payment cards')"/>
                     </div>
                 </div>
             </div>
@@ -48,8 +48,7 @@
                     </router-link>
                     <router-link :to="{name: 'ServiceProviders'}"
                                  :class="{'active-btn': $route.name === 'ServiceProviders', 'not-active-btn': $route.name !== 'ServiceProviders'}"
-                                 class="btn btn-lg rounded-0 col-lg-6 col-md-6 col-sm-12">For Services
-                        Providers
+                                 class="btn btn-lg rounded-0 col-lg-6 col-md-6 col-sm-12">For Service Providers
                     </router-link>
                     <router-link :to="{name: 'Ecommerce'}"
                                  :class="{'active-btn': $route.name === 'Ecommerce', 'not-active-btn': $route.name !== 'Ecommerce'}"
@@ -57,7 +56,7 @@
                     </router-link>
                     <router-link :to="{name: 'ReferralProgram'}"
                                  :class="{'active-btn': $route.name === 'ReferralProgram', 'not-active-btn': $route.name !== 'ReferralProgram'}"
-                                 class="btn btn-lg rounded-0 col-lg-6 col-md-6 col-sm-12">Services Program
+                                 class="btn btn-lg rounded-0 col-lg-6 col-md-6 col-sm-12">Service Program
                     </router-link>
                 </div>
                 <router-view></router-view>
@@ -83,31 +82,32 @@ export default {
                 {
                     id: 2,
                     name: 'accounts and transfers',
-                    data: `<h4 class="my-3">Services & Services</h4><p class="text-center text-muted">${this.lorem()}</p>`,
+                    data: '<h4 class="my-3">Service</h4>' +
+                        `<p class="text-center text-muted">${this.lorem()}</p>`,
                     page: 'Services'
                 },
                 {
                     id: 3,
                     name: 'currency exchange',
-                    data: `<h4 class="my-3">Services</h4><p class="text-center text-muted">${this.lorem()}</p>`,
+                    data: `<h4 class="my-3">Service</h4><p class="text-center text-muted">${this.lorem()}</p>`,
                     page: 'Services'
                 },
                 {
                     id: 4,
                     name: 'e-commerce',
-                    data: `<h4 class="my-3">Services</h4><p class="text-center text-muted">${this.lorem()}</p>`,
+                    data: `<h4 class="my-3">Service</h4><p class="text-center text-muted">${this.lorem()}</p>`,
                     page: 'Services'
                 },
                 {
                     id: 5,
                     name: 'remittance',
-                    data: `<h4 class="my-3">Services</h4><p class="text-center text-muted">${this.lorem()}</p>`,
+                    data: `<h4 class="my-3">Service</h4><p class="text-center text-muted">${this.lorem()}</p>`,
                     page: 'Services'
                 },
                 {
                     id: 6,
                     name: 'payment cards',
-                    data: `<h4 class="my-3">Services Services</h4><p class="text-center text-muted">${this.lorem()}</p>`,
+                    data: `<h4 class="my-3">Service</h4><p class="text-center text-muted">${this.lorem()}</p>`,
                     page: 'Services'
                 }
 

@@ -6,22 +6,22 @@
             <div v-html="displayContent('benefits title')"/>
             <div class="row">
                 <div class="benefit-col col-lg-4 col-md-6 col-sm-12">
-                    <div v-html="displayContent('something')"/>
+                    <div v-html="displayContent('multi-currency accounts')"/>
                 </div>
                 <div class="benefit-col col-lg-4 col-md-6 col-sm-12">
-                    <div v-html="displayContent('something')"/>
+                    <div v-html="displayContent('iban')"/>
                 </div>
                 <div class="benefit-col col-lg-4 col-md-6 col-sm-12">
-                    <div v-html="displayContent('something')"/>
+                    <div v-html="displayContent('international transfers')"/>
                 </div>
                 <div class="benefit-col col-lg-4 col-md-6 col-sm-12">
-                    <div v-html="displayContent('something')"/>
+                    <div v-html="displayContent('fx services')"/>
                 </div>
                 <div class="benefit-col col-lg-4 col-md-6 col-sm-12">
-                    <div v-html="displayContent('something')"/>
+                    <div v-html="displayContent('sepa payments')"/>
                 </div>
             </div>
-            <div v-html="displayContent('having an Something')"/>
+            <div v-html="displayContent('bottom paragraph')"/>
         </div>
         <div>
             <div v-html="displayContent('multi-currency title')"/>
@@ -122,22 +122,23 @@ export default {
                 },
                 {
                     id: 9,
+                    name: 'bottom paragraph',
+                    data: `<p class="pb-4 text-muted">${this.lorem()}</p>`,
+                    page: 'services'
+                },
+                {
+                    id: 10,
                     name: 'multi-currency title',
                     data: `<h2 class="text-center my-5">${this.lorem()}</h2>`,
                     page: 'services'
                 },
                 {
-                    id: 10,
+                    id: 11,
                     name: 'how title',
                     data: `<h2 class="my-5 text-center">${this.lorem()}</h2>`,
                     page: 'services'
                 },
-                {
-                    id: 11,
-                    name: 'having an IBS',
-                    data: `<p class="pb-4 text-muted">${this.lorem()}</p>`,
-                    page: 'services'
-                },
+
             ]
         }
     },
@@ -148,9 +149,6 @@ export default {
             }
             return null;
         },
-        test() {
-            console.log('pressed')
-        }
     }
 }
 
