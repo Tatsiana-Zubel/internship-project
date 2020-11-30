@@ -55,13 +55,37 @@
 </template>
 
 <script>
+    import * as bootstrap from "bootstrap";
 
-export default {
-    data() {
-        return {
-            showColor: false,
+    export default {
+        data() {
+            return {
+                showColor: false,
+            }
         }
     }
-}
+    window.addEventListener("resize", function () {
+        proceedWithNavbarTooltip()
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        proceedWithNavbarTooltip()
+    });
+
+    const proceedWithNavbarTooltip = function () {
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="navbar-tooltip"]'))
+        if (window.innerWidth < "992" || window.innerWidth > "1110") {
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                const tooltip = bootstrap.Tooltip.getInstance(tooltipTriggerEl)
+                if (tooltip) {
+                    tooltip.dispose()
+                }
+            })
+        } else {
+            tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        }
+    }
 </script>
 
